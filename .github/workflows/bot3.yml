@@ -31,7 +31,7 @@ jobs:
 
       - name: Setup git Environment
         run: |
-          git config --global user.name "priiiiyo"
+          git config --global user.name "ZualoliconVN"
           git config --global user.email ${{ secrets.PVT_EM }}
           git config --global pull.rebase false
           git config --global credential.helper store
@@ -42,7 +42,7 @@ jobs:
         continue-on-error: true
         run: |
           mkdir tmp && cd tmp
-          git clone https://github.com/PriiiiyoGSIs/Bot3-Workflow Bobot
+          git clone https://github.com/ZualoliconVN/Bot3-Workflow Bobot
 
       - name: Install tools/packages
         continue-on-error: true
@@ -74,7 +74,7 @@ jobs:
         env:
           JAVA_HOME: /usr/oracle/java/graalvm-ce-java16-21.2.0
         run: |
-          git clone https://github.com/PriiiiyoGSIs/Bot3
+          git clone https://github.com/ZualoliconVN/Bot3
           cd Bot3 && ./gradlew shadowJar; cd build/libs
           mkdir configs && cd configs
           touch configs.prop
