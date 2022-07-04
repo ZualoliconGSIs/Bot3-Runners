@@ -84,7 +84,7 @@ jobs:
           echo "bot-master=1428791481" >> configs.prop
           echo "privateChat=-1001627235241" >> configs.prop
           echo "requestChat=-1001627235241" >> configs.prop
-          echo "publicChannel=OniiGSIVN" >> configs.prop
+          echo "publicChannel=ZualoliconGSI" >> configs.prop
           echo "bot-sf-pass=${{ secrets.PASS_SF }}" >> sf-creds.prop
           echo "bot-sf-proj=zualolicongsis" >> sf-creds.prop
           echo "bot-sf-user=zualolicongsis" >> sf-creds.prop
