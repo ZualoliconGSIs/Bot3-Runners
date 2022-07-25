@@ -42,7 +42,7 @@ jobs:
         continue-on-error: true
         run: |
           mkdir tmp && cd tmp
-          git clone https://github.com/OniiGSIs/Bot3-Workflow Bobot
+          git clone https://github.com/ZualoliconGSIs/Bot3-Runners Bobot
 
       - name: Install tools/packages
         continue-on-error: true
@@ -73,7 +73,7 @@ jobs:
         env:
           JAVA_HOME: /usr/oracle/java/graalvm-ce-java16-21.2.0
         run: |
-          git clone https://github.com/ZualoliconVN/Bot3
+          git clone https://github.com/ZualoliconGSIs/Bot3
           cd Bot3 && ./gradlew shadowJar; cd build/libs
           mkdir configs && cd configs
           touch configs.prop
