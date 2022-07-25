@@ -69,10 +69,11 @@ jobs:
           sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/oracle/java/graalvm-ce-java16-21.2.0/bin/javac" 1
           sudo update-alternatives --install "/usr/bin/java" "java" "/usr/oracle/java/graalvm-ce-java16-21.2.0/bin/java" 1
           sudo update-alternatives --install "/usr/bin/gu" "gu" "/usr/oracle/java/graalvm-ce-java16-21.2.0/bin/gu" 1
-            - name: Clone, Compile & Setup Bot³+t
+
+      - name: Clone, Compile & Setup Bot³+t
         env:
           JAVA_HOME: /usr/oracle/java/graalvm-ce-java16-21.2.0
-          run: |
+         run: |
           git clone https://github.com/ZualoliconGSIs/Bot3
           cd Bot3 && ./gradlew shadowJar; cd build/libs
           mkdir configs && cd configs
