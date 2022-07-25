@@ -63,7 +63,7 @@ jobs:
           sudo tar -xzvf graalvm-jdk16.tar.gz >> /dev/null 2>&1 && sudo rm -f graalvm-jdk16.tar.gz
           export JAVA_HOME=/usr/oracle/java/graalvm-ce-java16-21.2.0
           export PATH=$PATH:$JAVA_HOME/bin
-      
+  
       - name: Set GraalVM (binaries) as default
         run: |
           sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/oracle/java/graalvm-ce-java16-21.2.0/bin/javac" 1
