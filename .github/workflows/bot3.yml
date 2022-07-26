@@ -105,7 +105,7 @@ jobs:
         run: |
           sudo apt install openjdk-8-jdk -y >> /dev/null 2>&1
           cd Bot3/build/libs
-          git clone --recurse-submodules https://ZualoliconVN:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.GSI }} ErfanGSIs
+          git clone --recurse-submodules https://ZualoliconVN:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.GSI }} -b velan/stable ErfanGSIs
           cd ErfanGSIs && chmod 777 url2GSI.sh
           cd ErfanGSIs && bash update.sh
           pip3 install wheel setuptools
